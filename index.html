@@ -39,6 +39,11 @@
             padding: 0 20px;
         }
 
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
         header ul {
             list-style: none;
             display: flex;
@@ -62,7 +67,7 @@
 
         /* Hero Section */
         .hero {
-            background: url('tree-banner.jpg') no-repeat center center/cover;
+            background: url('https://via.placeholder.com/1920x1080?text=Tree+Banner') no-repeat center center/cover;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -74,11 +79,12 @@
 
         .hero h1 {
             font-size: 3rem;
+            margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 1.5rem;
-            margin: 20px 0;
+            margin-bottom: 30px;
         }
 
         .hero .btn {
@@ -96,7 +102,7 @@
 
         /* About Section */
         #about {
-            padding: 50px 20px;
+            padding: 70px 20px;
             background: #ecf0f1;
             text-align: center;
         }
@@ -114,7 +120,7 @@
 
         /* Projects Section */
         #projects {
-            padding: 50px 20px;
+            padding: 70px 20px;
             background: #fff;
         }
 
@@ -136,16 +142,29 @@
             background: #f4f4f4;
             padding: 20px;
             border-radius: 10px;
+            text-align: center;
         }
 
         .project-gallery img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project-gallery h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-gallery p {
+            font-size: 1rem;
+            color: #555;
         }
 
         /* Donation Section */
         #donate {
-            padding: 50px 20px;
+            padding: 70px 20px;
             background: #27ae60;
             color: #fff;
             text-align: center;
@@ -176,9 +195,14 @@
 
         /* Contact Section */
         #contact {
-            padding: 50px 20px;
+            padding: 70px 20px;
             background: #ecf0f1;
             text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
         #contact form {
@@ -255,7 +279,21 @@
     <section id="projects">
         <h2>Our Projects</h2>
         <div class="project-gallery">
-            <!-- Add images and descriptions of your projects here -->
+            <div>
+                <img src="https://via.placeholder.com/300?text=Project+1" alt="Project 1">
+                <h3>Urban Tree Planting</h3>
+                <p>We focus on planting trees in urban areas to improve air quality and create green spaces.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300?text=Project+2" alt="Project 2">
+                <h3>Forest Restoration</h3>
+                <p>Our team is involved in restoring deforested areas by planting native trees.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300?text=Project+3" alt="Project 3">
+                <h3>School Tree Drives</h3>
+                <p>We collaborate with schools to educate children on the importance of trees and engage them in tree planting activities.</p>
+            </div>
         </div>
     </section>
 
@@ -264,8 +302,9 @@
         <h2>Support Our Cause</h2>
         <div class="donation-counter">
             <!-- Donation counter script goes here -->
+            $12,345 Raised
         </div>
-        <a href="#" class="btn">Contribute</a>
+        <a href="https://www.donate.com" class="btn">Contribute</a>
     </section>
 
     <!-- Contact Section -->
@@ -277,9 +316,6 @@
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <div class="social-links">
-            <!-- Add social media links here -->
-        </div>
     </section>
 
     <!-- Footer -->
