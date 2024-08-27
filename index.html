@@ -17,7 +17,6 @@
             font-family: 'Arial', sans-serif;
             color: #333;
             line-height: 1.6;
-            scroll-behavior: smooth; /* Smooth scrolling */
         }
 
         /* Header */
@@ -331,6 +330,30 @@
         <p>&copy; 2024 • Made By ABU TALHA RAJ. All Rights Reserved.</p>
         <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61564453421912&mibextid=ZbWKwL">Facebook</a></p>
     </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
-</html>
+    </html>
+    
