@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Workers - Tree Planting Initiative</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background: #34495e;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('tree-banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .hero .btn {
+            background: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #2ecc71;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            background: #ecf0f1;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        #projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-gallery div {
+            margin: 10px;
+            width: 300px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Donation Section */
+        #donate {
+            padding: 50px 20px;
+            background: #27ae60;
+            color: #fff;
+            text-align: center;
+        }
+
+        #donate h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #donate .donation-counter {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+
+        #donate .btn {
+            background: #fff;
+            color: #27ae60;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        #donate .btn:hover {
+            background: #ecf0f1;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            background: #ecf0f1;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            padding: 10px 20px;
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: #2ecc71;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer p a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Green Workers</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Planting Trees for a Greener Future</h1>
+        <p>Join us in making the world a better place, one tree at a time.</p>
+        <a href="#donate" class="btn">Donate Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Green Workers</h2>
+        <p>We are a community-driven group committed to reforesting our planet by planting trees and creating awareness about environmental sustainability.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-gallery">
+            <!-- Add images and descriptions of your projects here -->
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate">
+        <h2>Support Our Cause</h2>
+        <div class="donation-counter">
+            <!-- Donation counter script goes here -->
+        </div>
+        <a href="#" class="btn">Contribute</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <!-- Add social media links here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 • Made By ABU TALHA RAJ. All Rights Reserved.</p>
+        <p>Follow us on <a href="https://facebook.com/yourpage">Facebook</a></p>
+    </footer>
+</body>
+
+</html>
