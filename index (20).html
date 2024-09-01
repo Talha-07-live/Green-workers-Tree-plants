@@ -103,8 +103,9 @@
 
         /* About Section */
         #about {
-            padding: 70px 20px;
-            background: #ecf0f1;
+            padding: 250px 20px;
+            background: url('https://s10.gifyu.com/images/SoWlO.jpg') no-repeat center center/cover;
+            color: #fff; /* Ensures text is visible against the background */
             text-align: center;
         }
 
@@ -165,9 +166,9 @@
 
         /* Donation Section */
         #donate {
-            padding: 70px 20px;
-            background: #27ae60;
-            color: #fff;
+            padding: 350px 20px;
+            background: url('https://s10.gifyu.com/images/SogRs.jpg') no-repeat center center/cover;
+            color: #fff; /* Ensures text is visible against the background */
             text-align: center;
         }
 
@@ -196,7 +197,7 @@
 
         /* Contact Section */
         #contact {
-            padding: 70px 20px;
+            padding: 150px 20px;
             background: #ecf0f1;
             text-align: center;
         }
@@ -285,17 +286,17 @@
         <h2>Our Projects</h2>
         <div class="project-gallery">
             <div>
-                <img src="https://via.placeholder.com/300?text=Project+1" alt="Project 1">
+                <img src="https://s11.gifyu.com/images/SoOUu.jpg" alt="Project 1">
                 <h3>Urban Tree Planting</h3>
                 <p>We focus on planting trees in urban areas to improve air quality and create green spaces.</p>
             </div>
             <div>
-                <img src="https://via.placeholder.com/300?text=Project+2" alt="Project 2">
+                <img src="https://s11.gifyu.com/images/SoOUn.jpg" alt="Project 2">
                 <h3>Forest Restoration</h3>
                 <p>Our team is involved in restoring deforested areas by planting native trees.</p>
             </div>
             <div>
-                <img src="https://via.placeholder.com/300?text=Project+3" alt="Project 3">
+                <img src="https://s11.gifyu.com/images/SoOUQ.jpg" alt="Project 3">
                 <h3>School Tree Drives</h3>
                 <p>We collaborate with schools to educate children on the importance of trees and engage them in tree planting activities.</p>
             </div>
@@ -307,7 +308,6 @@
         <h2>Support Our Cause</h2>
         <div class="donation-counter">
             <!-- Donation counter script goes here -->
-            
         </div>
         <a href="https://greenworkers.donation.22web.org" class="btn">Contribute</a>
     </section>
@@ -331,6 +331,30 @@
         <p>&copy; 2024 • Made By ABU TALHA RAJ. All Rights Reserved.</p>
         <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61564453421912&mibextid=ZbWKwL">Facebook</a></p>
     </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
-</html>
+    </html>
+    
